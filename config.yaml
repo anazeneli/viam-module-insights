@@ -1,0 +1,34 @@
+github:
+  org: "viamrobotics"
+  token_env: "GITHUB_TOKEN"
+
+anthropic:
+  api_key_env: "ANTHROPIC_API_KEY"
+  model: "claude-sonnet-4-20250514"
+  max_tokens: 8000
+
+target_repos:
+  # Add your Viam module repos here
+
+monitoring:
+  dependency_age_threshold_months: 6
+  output_dir: "./reports"
+  workspace_dir: "./workspace"
+
+languages:
+  python:
+    - "requirements.txt"
+    - "pyproject.toml"
+    - "setup.py"
+  go:
+    - "go.mod"
+    - "go.sum"
+  typescript:
+    - "package.json"
+    - "package-lock.json"
+    - "yarn.lock"
+
+viam_files:
+  - "meta.json"
+  - ".viam"
+  - "module.yaml"
