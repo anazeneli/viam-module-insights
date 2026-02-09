@@ -1,11 +1,11 @@
 """GitHub API client."""
-from github import Github
+from github import Github, Auth
 
 class GitHubClient:
     """Wrapper for GitHub API operations."""
-    
+
     def __init__(self, token, org_name):
-        self.github = Github(token)
+        self.github = Github(auth=Auth.Token(token))
         self.org_name = org_name
         # For personal repos, we don't use organization
         self.is_personal = True

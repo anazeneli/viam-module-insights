@@ -20,6 +20,7 @@ ENV/
 .env.local
 *.local.yaml
 config.local.yaml
+config.yaml
 secrets/
 
 # Workspace - cloned repositories
@@ -27,6 +28,7 @@ workspace/
 
 # Generated reports & outputs
 reports/
+report_*.json
 *.log
 
 # IDE
