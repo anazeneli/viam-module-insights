@@ -1,5 +1,5 @@
 github:
-  org: "viamrobotics"
+  org: "your-github-username"   # GitHub user or org that owns the target repos
   token_env: "GITHUB_TOKEN"
 
 anthropic:

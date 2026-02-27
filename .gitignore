@@ -29,6 +29,7 @@ workspace/
 # Generated reports & outputs
 reports/
 report_*.json
+scan_*.json
 *.log
 
 # IDE
