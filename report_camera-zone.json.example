@@ -1,0 +1,50 @@
+{
+  "module_name": "camera-zone",
+  "repository_url": "https://github.com/<your-org>/camera-zone",
+  "last_checked": "2026-01-01T00:00:00.000000",
+  "overall_status": "RED",
+  "health_score": 20,
+  "languages": {
+    "python": {
+      "status": "RED",
+      "health_score": 20,
+      "files_analyzed": [
+        "requirements.txt"
+      ],
+      "issues": [
+        "4 out of 6 dependencies are not pinned to specific versions",
+        "opencv-python is unpinned and can cause compatibility issues",
+        "numpy is unpinned and is a critical dependency",
+        "Pillow is unpinned and has frequent security updates",
+        "typing-extensions is unpinned"
+      ],
+      "recommendations": [
+        "Pin opencv-python to specific version: opencv-python==4.8.1.78",
+        "Pin numpy to specific version: numpy==1.24.3",
+        "Pin Pillow to specific version: Pillow==10.0.1",
+        "Pin typing-extensions to specific version: typing-extensions==4.8.0",
+        "Consider updating viam-sdk to latest stable version if compatible"
+      ],
+      "viam_sdk_present": true,
+      "viam_sdk_version": "0.47.0"
+    }
+  },
+  "viam_specific": {
+    "meta_json_present": true,
+    "readme_present": true
+  },
+  "issues": [
+    "4 out of 6 dependencies are not pinned to specific versions",
+    "opencv-python is unpinned and can cause compatibility issues",
+    "numpy is unpinned and is a critical dependency",
+    "Pillow is unpinned and has frequent security updates",
+    "typing-extensions is unpinned"
+  ],
+  "recommendations": [
+    "Pin opencv-python to specific version: opencv-python==4.8.1.78",
+    "Pin numpy to specific version: numpy==1.24.3",
+    "Pin Pillow to specific version: Pillow==10.0.1",
+    "Pin typing-extensions to specific version: typing-extensions==4.8.0",
+    "Consider updating viam-sdk to latest stable version if compatible"
+  ]
+}
